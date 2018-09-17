@@ -1,0 +1,24 @@
+public static void main(string[] args)
+	public : This means you can call this from outside the class you are currently in. This is needed since the method is being called by the java runtime system which is not in the current class
+	static : this is an access modifier so that the class name can be called without the need to make an object. (when the java program is loaded space in memory is already allocated)
+	void : a return type, main will not return anything
+	main : it is a method or function name 
+	string[] args : it is an argument that will allow the collection of variables from the cmd line as strings
+	ref : https://stackoverflow.com/questions/11952804/explanation-of-string-args-and-static-in-public-static-void-mainstring-a
+
+Pacakges: in java packages are a method to encapsulate classes, sub packages, and interfaces. This done to:  
+		i.  prevent naming conflicts (two classes with the same name in two packages)
+		ii. make searching and usage of classes,interfaces, enumerations, and annotations easier
+		iii.provide controlled access, protected and default. A protected member is accessible only within the same package or subclass(inherits, extends)
+			a default member is accessible only by the same package
+Access modifiers:
+	public :    Has the widest scope and will be accessible from anywhere (care!)
+	private:    methods or data members will only be accessible from inside the class where they are declared. 
+	protected:  methods or data members will only be accessible from same package or a subclass
+	no modifer: (default) only within the same package
+
+Non access modifiers: 
+	static:      
+	final:       
+	abstract:    
+	synchronized: 
