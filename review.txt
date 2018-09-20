@@ -18,7 +18,7 @@ Access modifiers:
 	no modifer: (default) only within the same package
 
 Non access modifiers: 
-	static:      
-	final:       
-	abstract:    
-	synchronized: 
+	static:      The static keyword is used to create variables/methods that will exist independently of any instances created for the class. They are known as class variables. 
+	final:       can only be explicitly initialized once. can never be reassigned to refer to another object , but the data within the object can be modified  
+	abstract:    can never be instantiated, but can be extended. (cannot be abstract and final)
+	synchronized:used to indicate that a method can only can only be accessed by only one thread at a time 
