@@ -6,7 +6,7 @@ class Nqueens{
   }
   /*----------------------------------------------------------------------------------------------*/
   //
-  static boolean isSafe(int[][] arr, int i, int colQueen){ // checks if queen is safe in this positon
+  boolean isSafe(int[][] arr, int i, int colQueen){ // checks if queen is safe in this positon
     int row, col;
     for(col=0; col<colQueen; col++){
       if(arr[i][col] == 1) return false; // if 1(queen spotted) then not safe
@@ -20,7 +20,7 @@ class Nqueens{
     return true;
   }
   /*----------------------------------------------------------------------------------------------*/
-  static boolean placeQueen(int[][] arr, int colQueen){ // backtrack to find where to place queens
+  boolean placeQueen(int[][] arr, int colQueen){ // backtrack to find where to place queens
     if(colQueen >= arr.length){ //if all queens are placed
       return true;
     }
@@ -34,7 +34,7 @@ class Nqueens{
     return false; // if we get through all the rows and cannot find a safe spot the not possible
   }
   /*----------------------------------------------------------------------------------------------*/
-  static boolean Solver(){
+  boolean Solver(){
     int[][] board = {{0, 0, 0, 0},
                      {0, 0, 0, 0},
                      {0, 0, 0, 0},
@@ -48,7 +48,7 @@ class Nqueens{
     return true;
   }
   /*----------------------------------------------------------------------------------------------*/
-  static void printBoard(int[][] arr){
+  void printBoard(int[][] arr){
     for(int i=0; i<arr.length; i++){
       for(int j=0; j<arr.length; j++){
         System.out.print(" "+arr[i][j]+" ");
