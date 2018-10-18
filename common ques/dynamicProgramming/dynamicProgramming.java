@@ -23,7 +23,7 @@ class fibSeq{
 class fibSeq{
   private int result;
 
-  int findNth(int n, int[] savedValues){ // heere the array savedValues will store the values of the seq at the index determined by n
+  int findNth(int n, int[] savedValues){ // here the array savedValues will store the values of the seq at the index determined by n
     if(savedValues[n] != null){ // array is initialized to null and if the value is not null then the value was already computed
       return result = savedValues[n];
     }
